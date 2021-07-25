@@ -23,3 +23,7 @@
 
 ### 2.2 Window Function
 [534](100-1000/534Game_play_analysis.sql),[1112](1001-1300/1112Highest_grade_for_each_student.sql)
+
+### 2.3 Combine columns
+
+* stack columns with union all [1783](1301-1700/1783.Grand_Slam_Titles.sql)
