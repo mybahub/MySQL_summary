@@ -28,7 +28,10 @@
 
 * stack columns with union all [1783](1301-1700/1783.Grand_Slam_Titles.sql)
 
+### 2.4 one column to many
 
-### 2.4 Consecutive values
+* time period with recursive [1301-1700](1384Total_sales_amount_by_year.sql)
+
+### 2.5 Consecutive values
 
 * Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql)
