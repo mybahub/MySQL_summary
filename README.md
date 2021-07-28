@@ -31,4 +31,4 @@
 
 ### 2.4 Consecutive values
 
-* Consecutive date [550] (100-1000/550.Game_play_analysis_IV.sql)
+* Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql)
