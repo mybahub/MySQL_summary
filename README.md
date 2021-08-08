@@ -19,10 +19,9 @@
 
 ## 2.0
 ### 2.1 Recursive
-[1384](1001-1300/1384Total_sales_amount_by_year.sql)
+* break one row [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
-#### 2.1.1 making a full list
-[1336](1301-1700/1336.Number_of_trans.sql)
+* making a full list [1336](1301-1700/1336.Number_of_trans.sql)
 
 ### 2.2 Window Function
 [534](100-1000/534Game_play_analysis.sql),[1112](1001-1300/1112Highest_grade_for_each_student.sql)
@@ -33,7 +32,7 @@
 
 ### 2.4 one column to many
 
-* time period with recursive [1301-1700](1384Total_sales_amount_by_year.sql)
+* time period with recursive [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
 ### 2.5 Consecutive values
 
