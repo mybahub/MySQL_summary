@@ -9,8 +9,9 @@
 ### 1.2 array
 [585](100-1000/585.Investment_in_2016.sql)
 
-
-
+### 1.3 break one column to many
+  + if function [1322](1301-1700/1322.Ads_performance.sql)
+  + row_num+group by ~(pivot) [618](100-1000/618.Students_report_by_geography.sql)
 
 
 
