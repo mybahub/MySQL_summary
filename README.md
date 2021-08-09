@@ -1,10 +1,13 @@
 # SQL
 
 ## 1.0 Topics
-### 1.1 Date cutoff
-[1384](1001-1300/1384Total_sales_amount_by_year.sql)
+### 1.1 Date
+* break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
+* date shift
+  + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
 
-
+### 1.2 array
+[585](100-1000/585.Investment_in_2016.sql)
 
 
 
