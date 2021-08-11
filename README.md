@@ -19,6 +19,7 @@
 
 ### 1.5 extract info from each group by condition
   + maximum: max+partition by[1077](1001-1300/1077.Project_employee_ii.sql)
+  + most recent : dense_rank() [1549](1301-1700/1549.The_most_recent_orders_for_each_product.sql)
 
 ### 1.6 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql)
@@ -30,7 +31,7 @@
 ### 2.1 Recursive
 * break one row [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
-* making a full list [1336](1301-1700/1336.Number_of_trans.sql)
+* making a full list [1336](1301-1700/1336.Number_of_trans.sql), [1613](1301-1700/1613.Find_the_missing_ids.sql)
 
 ### 2.2 Window Function
 
