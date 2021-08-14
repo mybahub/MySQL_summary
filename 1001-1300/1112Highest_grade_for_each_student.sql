@@ -1,5 +1,4 @@
-/*
-median
+/*medium
 */
 
 /* 1. window function

@@ -1,5 +1,10 @@
 # SQL
 
+## 0.0 Execution order
+
+![](pics/order.png)
+
+
 ## 1.0 Topics
 ### 1.1 Date
 * break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
@@ -18,15 +23,16 @@
   + stack columns with union all [1783](1301-1700/1783.Grand_Slam_Titles.sql),[602](100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql),[1795](1701-2000/1795.Rearrange_products_table.sql)
 
 
-### 1.5 combine rows
+### 1.5 combine rows (pivot)
   + AS + union all + group by [1841](1701-2000/1841.League_statistics.sql)
+  + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql)
 
 ### 1.6 extract info from each group by condition
   + maximum: max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
-  + most recent : dense_rank() [1549](1301-1700/1549.The_most_recent_orders_for_each_product.sql)
+  + most recent : dense_rank() [1549](1301-1700/1549.The_most_recent_orders_for_each_product.sql), [1532](1301-1700/1532.The_most_recent_three_orders.sql)
 
 ### 1.7 Consecutive values
-  +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql)
+  +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
   +  3+Consecutive id [1811](1701-2000/1811.Find_interview_candidates.sql)
 
 
