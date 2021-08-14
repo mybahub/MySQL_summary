@@ -28,8 +28,13 @@
   + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql)
 
 ### 1.6 extract info from each group by condition
-  + maximum: max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
+  + maximum:
+    + max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
+    + count()>=all() [1076](1001-1300/1076.Project_employee_ii.sql)
   + most recent : dense_rank() [1549](1301-1700/1549.The_most_recent_orders_for_each_product.sql), [1532](1301-1700/1532.The_most_recent_three_orders.sql)
+  + median
+    + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
+    + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)

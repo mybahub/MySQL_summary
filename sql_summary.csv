@@ -1,0 +1,175 @@
+title,acceptance,difficulty,type
+175. Combine Two Tables,0.6659999999999999,Easy,sql
+176. Second Highest Salary,0.34299999999999997,Easy,sql
+177. Nth Highest Salary,0.345,Medium,sql
+178. Rank Scores,0.535,Medium,sql
+180. Consecutive Numbers,0.43799999999999994,Medium,sql
+181. Employees Earning More Than Their Managers,0.63,Easy,sql
+182. Duplicate Emails,0.665,Easy,sql
+183. Customers Who Never Order,0.594,Easy,sql
+184. Department Highest Salary,0.428,Medium,sql
+185. Department Top Three Salaries,0.424,Hard,sql
+196. Delete Duplicate Emails,0.48200000000000004,Easy,sql
+197. Rising Temperature,0.41,Easy,sql
+262. Trips and Users,0.366,Hard,sql
+511. Game Play Analysis I,0.816,Easy,sql
+512. Game Play Analysis II,0.5579999999999999,Easy,sql
+534. Game Play Analysis III,0.8079999999999999,Medium,sql
+550. Game Play Analysis IV,0.451,Medium,sql
+569. Median Employee Salary,0.637,Hard,sql
+570. Managers with at Least 5 Direct Reports,0.6729999999999999,Medium,sql
+571. Find Median Given Frequency of Numbers,0.45299999999999996,Hard,sql
+574. Winning Candidate,0.547,Medium,sql
+577. Employee Bonus,0.733,Easy,sql
+578. Get Highest Answer Rate Question,0.429,Medium,sql
+579. Find Cumulative Salary of an Employee,0.389,Hard,sql
+580. Count Student Number in Departments,0.536,Medium,sql
+584. Find Customer Referee,0.748,Easy,sql
+585. Investments in 2016,0.579,Medium,sql
+586. Customer Placing the Largest Number of Orders,0.757,Easy,sql
+595. Big Countries,0.792,Easy,sql
+596. Classes More Than 5 Students,0.392,Easy,sql
+597. Friend Requests I: Overall Acceptance Rate,0.423,Easy,sql
+601. Human Traffic of Stadium,0.474,Hard,sql
+602. Friend Requests II: Who Has the Most Friends,0.591,Medium,sql
+603. Consecutive Available Seats,0.669,Easy,sql
+607. Sales Person,0.664,Easy,sql
+608. Tree Node,0.708,Medium,sql
+610. Triangle Judgement,0.7,Easy,sql
+612. Shortest Distance in a Plane,0.624,Medium,sql
+613. Shortest Distance in a Line,0.804,Easy,sql
+614. Second Degree Follower,0.335,Medium,sql
+615. Average Salary: Departments VS Company,0.546,Hard,sql
+618. Students Report By Geography,0.619,Hard,sql
+619. Biggest Single Number,0.461,Easy,sql
+620. Not Boring Movies,0.713,Easy,sql
+626. Exchange Seats,0.675,Medium,sql
+627. Swap Salary,0.792,Easy,sql
+1045. Customers Who Bought All Products,0.677,Medium,sql
+1050. Actors and Directors Who Cooperated At Least Three Times,0.7240000000000001,Easy,sql
+1068. Product Sales Analysis I,0.815,Easy,sql
+1069. Product Sales Analysis II,0.831,Easy,sql
+1070. Product Sales Analysis III,0.501,Medium,sql
+1075. Project Employees I,0.665,Easy,sql
+1076. Project Employees II,0.522,Easy,sql
+1077. Project Employees III,0.785,Medium,sql
+1082. Sales Analysis I,0.746,Easy,sql
+1083. Sales Analysis II,0.508,Easy,sql
+1084. Sales Analysis III,0.5429999999999999,Easy,sql
+1097. Game Play Analysis V,0.565,Hard,sql
+1098. Unpopular Books,0.456,Medium,sql
+1107. New Users Daily Count,0.45899999999999996,Medium,sql
+1112. Highest Grade For Each Student,0.7290000000000001,Medium,sql
+1113. Reported Posts,0.664,Easy,sql
+1126. Active Businesses,0.684,Medium,sql
+1127. User Purchase Platform,0.51,Hard,sql
+1132. Reported Posts II,0.344,Medium,sql
+1141. User Activity for the Past 30 Days I,0.546,Easy,sql
+1142. User Activity for the Past 30 Days II,0.35600000000000004,Easy,sql
+1148. Article Views I,0.7709999999999999,Easy,sql
+1149. Article Views II,0.48200000000000004,Medium,sql
+1158. Market Analysis I,0.6509999999999999,Medium,sql
+1159. Market Analysis II,0.569,Hard,sql
+1164. Product Price at a Given Date,0.691,Medium,sql
+1173. Immediate Food Delivery I,0.831,Easy,sql
+1174. Immediate Food Delivery II,0.63,Medium,sql
+1179. Reformat Department Table,0.8220000000000001,Easy,sql
+1193. Monthly Transactions I,0.687,Medium,sql
+1194. Tournament Winners,0.527,Hard,sql
+1204. Last Person to Fit in the Bus,0.726,Medium,sql
+1205. Monthly Transactions II,0.45399999999999996,Medium,sql
+1211. Queries Quality and Percentage,0.7,Easy,sql
+1212. Team Scores in Football Tournament,0.569,Medium,sql
+1225. Report Contiguous Dates,0.636,Hard,sql
+1241. Number of Comments per Post,0.6779999999999999,Easy,sql
+1251. Average Selling Price,0.831,Easy,sql
+1264. Page Recommendations,0.6859999999999999,Medium,sql
+1270. All People Report to the Given Manager,0.883,Medium,sql
+1280. Students and Examinations,0.754,Easy,sql
+1285. Find the Start and End Number of Continuous Ranges,0.88,Medium,sql
+1294. Weather Type in Each Country,0.672,Easy,sql
+1303. Find the Team Size,0.902,Easy,sql
+1308. Running Total for Different Genders,0.885,Medium,sql
+1321. Restaurant Growth,0.728,Medium,sql
+1322. Ads Performance,0.5870000000000001,Easy,sql
+1327. List the Products Ordered in a Period,0.78,Easy,sql
+1336. Number of Transactions per Visit,0.507,Hard,sql
+1341. Movie Rating,0.591,Medium,sql
+1350. Students With Invalid Departments,0.904,Easy,sql
+1355. Activity Participants,0.748,Medium,sql
+1364. Number of Trusted Contacts of a Customer,0.795,Medium,sql
+1369. Get the Second Most Recent Activity,0.691,Hard,sql
+1378. Replace Employee ID With The Unique Identifier,0.907,Easy,sql
+1384. Total Sales Amount by Year,0.6559999999999999,Hard,sql
+1393. Capital Gain/Loss,0.9129999999999999,Medium,sql
+1398. Customers Who Bought Products A and B but Not C,0.81,Medium,sql
+1407. Top Travellers,0.841,Easy,sql
+1412. Find the Quiet Students in All Exams,0.627,Hard,sql
+1421. NPV Queries,0.823,Medium,sql
+1435. Create a Session Bar Chart,0.784,Easy,sql
+1440. Evaluate Boolean Expression,0.753,Medium,sql
+1445. Apples & Oranges,0.9129999999999999,Medium,sql
+1454. Active Users,0.386,Medium,sql
+1459. Rectangles Area,0.667,Medium,sql
+1468. Calculate Salaries,0.8240000000000001,Medium,sql
+1479. Sales by Day of the Week,0.826,Hard,sql
+1484. Group Sold Products By The Date,0.851,Easy,sql
+1495. Friendly Movies Streamed Last Month,0.509,Easy,sql
+1501. Countries You Can Safely Invest In,0.598,Medium,sql
+1511. Customer Order Frequency,0.743,Easy,sql
+1517. Find Users With Valid E-Mails,0.715,Easy,sql
+1527. Patients With a Condition,0.564,Easy,sql
+1532. The Most Recent Three Orders,0.7190000000000001,Medium,sql
+1543. Fix Product Name Format,0.65,Easy,sql
+1549. The Most Recent Orders for Each Product,0.6759999999999999,Medium,sql
+1555. Bank Account Summary,0.536,Medium,sql
+1565. Unique Orders and Customers Per Month,0.831,Easy,sql
+1571. Warehouse Manager,0.898,Easy,sql
+1581. Customer Who Visited but Did Not Make Any Transactions,0.8959999999999999,Easy,sql
+1587. Bank Account Summary II,0.9,Easy,sql
+1596. The Most Frequently Ordered Products for Each Customer,0.8540000000000001,Medium,sql
+1607. Sellers With No Sales,0.551,Easy,sql
+1613. Find the Missing IDs,0.755,Medium,sql
+1623. All Valid Triplets That Can Represent a Country,0.888,Easy,sql
+1633. Percentage of Users Attended a Contest,0.7040000000000001,Easy,sql
+1635. Hopper Company Queries I,0.555,Hard,sql
+1645. Hopper Company Queries II,0.395,Hard,sql
+1651. Hopper Company Queries III,0.6729999999999999,Hard,sql
+1661. Average Time of Process per Machine,0.797,Easy,sql
+1667. Fix Names in a Table,0.622,Easy,sql
+1677. Product's Worth Over Invoices,0.484,Easy,sql
+1683. Invalid Tweets,0.9079999999999999,Easy,sql
+1693. Daily Leads and Partners,0.909,Easy,sql
+1699. Number of Calls Between Two Persons,0.86,Medium,sql
+1709. Biggest Window Between Visits,0.8059999999999999,Medium,sql
+1715. Count Apples and Oranges,0.784,Medium,sql
+1729. Find Followers Count,0.7070000000000001,Easy,sql
+1731. The Number of Employees Which Report to Each Employee,0.493,Easy,sql
+1741. Find Total Time Spent by Each Employee,0.9079999999999999,Easy,sql
+1747. Leetflex Banned Accounts,0.685,Medium,sql
+1757. Recyclable and Low Fat Products,0.955,Easy,sql
+1767. Find the Subtasks That Did Not Execute,0.866,Hard,sql
+1777. Product's Price for Each Store,0.863,Easy,sql
+1783. Grand Slam Titles,0.9059999999999999,Medium,sql
+1789. Primary Department for Each Employee,0.8,Easy,sql
+1795. Rearrange Products Table,0.9009999999999999,Easy,sql
+1809. Ad-Free Sessions,0.623,Easy,sql
+1811. Find Interview Candidates,0.66,Medium,sql
+1821. Find Customers With Positive Revenue this Year,0.8959999999999999,Easy,sql
+1831. Maximum Transaction Each Day,0.851,Medium,sql
+1841. League Statistics,0.615,Medium,sql
+1843. Suspicious Bank Accounts,0.509,Medium,sql
+1853. Convert Date Format,0.894,Easy,sql
+1867. Orders With Maximum Quantity Above Average,0.7979999999999999,Medium,sql
+1873. Calculate Special Bonus,0.91,Easy,sql
+1875. Group Employees of the Same Salary,0.758,Medium,sql
+1890. The Latest Login in 2020,0.858,Easy,sql
+1892. Page Recommendations II,0.44299999999999995,Hard,sql
+1907. Count Salary Categories,0.67,Medium,sql
+1917. Leetcodify Friends Recommendations,0.316,Hard,sql
+1919. Leetcodify Similar Friends,0.42700000000000005,Hard,sql
+1934. Confirmation Rate,0.765,Medium,sql
+1939. Users That Actively Request Confirmation Messages,0.657,Easy,sql
+1949. Strong Friendship,0.607,Medium,sql
+1951. All the Pairs With the Maximum Number of Common Followers,0.7490000000000001,Medium,sql
+1965. Employees With Missing Information,0.892,Easy,sql
