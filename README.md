@@ -3,6 +3,7 @@
 ## 0.0 Execution order
 
 ![](pics/order.png)
+["from mysqltutorial"](https://www.mysqltutorial.org/mysql-having.aspx)
 
 
 ## 1.0 Topics
@@ -23,7 +24,7 @@
   + stack columns with union all [1783](1301-1700/1783.Grand_Slam_Titles.sql),[602](100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql),[1795](1701-2000/1795.Rearrange_products_table.sql)
 
 
-### 1.5 combine rows (pivot)
+### 1.5 Combine rows (pivot)
   + AS + union all + group by [1841](1701-2000/1841.League_statistics.sql)
   + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql)
 
@@ -56,5 +57,4 @@
   + second most recent [1369](1301-1700/1369.Get_the_second_most_recent_activity.sql)
   + Highest grade for each student [1112](1001-1300/1112Highest_grade_for_each_student.sql)
 
-### 2.3 array
-  [585](100-1000/585.Investment_in_2016.sql)
+### 2.3 array [585](100-1000/585.Investment_in_2016.sql)
