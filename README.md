@@ -3,7 +3,8 @@
 ## 0.0 Execution order
 
 ![](pics/order.png)
-["from mysqltutorial"](https://www.mysqltutorial.org/mysql-having.aspx)
+
+[from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
 
 ## 1.0 Topics
@@ -11,6 +12,10 @@
 * break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 * date shift
   + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
+* smaller than, if not exist, equals 0
+  + not in [1098](1001-1300/1098.Unpopular_books.sql)
+  + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql)
+  + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
@@ -36,6 +41,13 @@
   + median
     + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
     + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
+  + in a range exclusively
+    + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
+    + group by + having min>= AND max<= [1084](1001-1300/1084.Sales_analysis_iii.sql)
+  + smaller than (!!!remember 0)
+    + not in [1098](1001-1300/1098.Unpopular_books.sql)
+    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql)
+    + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
@@ -47,7 +59,7 @@
 ### 2.1 Recursive
 * break one row [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
-* making a full list [1336](1301-1700/1336.Number_of_trans.sql), [1613](1301-1700/1613.Find_the_missing_ids.sql)
+* making a full list [1336](1301-1700/1336.Number_of_trans.sql), [1613](1301-1700/1613.Find_the_missing_ids.sql),[1127](1001-1300/1127.User_purcahse_platform.sql)
 
 ### 2.2 Window Function
 
