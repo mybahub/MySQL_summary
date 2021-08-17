@@ -4,6 +4,12 @@
 
 ![](pics/order.png)
 
+* 1
+``` python
+GROUP BY m1.title
+ORDER BY avg(rating) DESC, m1.title
+```
+
 [from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
 
@@ -39,7 +45,7 @@
     + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
     + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
   + running total
-    + sum()+ wf order by [1308](1301-1700/1308.Running_total_for_different_genders.sql)
+    + sum()+ wf order by [1308](1301-1700/1308.Running_total_for_different_genders.sql),[1321](1301-1700/1321.Restaurant_growth.sql)
     + select filter in suqery [1308](1301-1700/1308.Running_total_for_different_genders.sql)
   + in a range exclusively
     + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
