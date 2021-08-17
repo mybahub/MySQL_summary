@@ -12,10 +12,7 @@
 * break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 * date shift
   + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
-* smaller than, if not exist, equals 0
-  + not in [1098](1001-1300/1098.Unpopular_books.sql)
-  + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql)
-  + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
+
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
@@ -41,13 +38,17 @@
   + median
     + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
     + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
+  + running total
+    + sum()+ wf order by [1308](1301-1700/1308.Running_total_for_different_genders.sql)
+    + select filter in suqery [1308](1301-1700/1308.Running_total_for_different_genders.sql)
   + in a range exclusively
     + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
     + group by + having min>= AND max<= [1084](1001-1300/1084.Sales_analysis_iii.sql)
-  + smaller than (!!!remember 0)
+  + full list by condition, including 0 case
     + not in [1098](1001-1300/1098.Unpopular_books.sql)
-    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql)
+    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
     + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
+    + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
