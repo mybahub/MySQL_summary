@@ -3,14 +3,15 @@
 ## 0.0 Execution order
 
 ![](pics/order.png)
+[from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
-* 1
-``` python
+* 1. order by
+``` sql
 GROUP BY m1.title
 ORDER BY avg(rating) DESC, m1.title
 ```
 
-[from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
+* 2. SELECT transform -> GROUP BY [1543](1301-1700/1543.Fix_product_name_format.sql)
 
 
 ## 1.0 Topics
@@ -18,10 +19,15 @@ ORDER BY avg(rating) DESC, m1.title
 * break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 * date shift
   + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
-
++ last_day("2011-03-03") -> "2011-03-31"
++ STR_TO_DATE(string, format)
+  + % e numeric MONTH
+  + % c numeric DAY
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
+  + group_concat [1484](1301-1700/1494.Group_sold_by_products_by_the_date.sql)
+  + character length (emoji/signs) [1683](1301-1700/1683.Invalid_tweets.sql)
 
 ### 1.3 Break columns
   + if function [1322](1301-1700/1322.Ads_performance.sql), [1205](1001-1300/1205.Monthly_transction_ii.sql)
@@ -35,6 +41,7 @@ ORDER BY avg(rating) DESC, m1.title
 ### 1.5 Combine rows (pivot)
   + AS + union all + group by [1841](1701-2000/1841.League_statistics.sql)
   + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql)
+  + sum(case when) [1445](1301-1700/1445.Apples_oranges.sql)
 
 ### 1.6 extract info from each group by condition
   + maximum:
@@ -44,7 +51,7 @@ ORDER BY avg(rating) DESC, m1.title
   + median
     + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
     + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
-  + running total
+  + running sum
     + sum()+ wf order by [1308](1301-1700/1308.Running_total_for_different_genders.sql),[1321](1301-1700/1321.Restaurant_growth.sql)
     + select filter in suqery [1308](1301-1700/1308.Running_total_for_different_genders.sql)
   + in a range exclusively
@@ -55,6 +62,8 @@ ORDER BY avg(rating) DESC, m1.title
     + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
     + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
     + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
+  + full list with cumsum (date range)
+    + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
@@ -77,3 +86,5 @@ ORDER BY avg(rating) DESC, m1.title
   + Highest grade for each student [1112](1001-1300/1112Highest_grade_for_each_student.sql)
 
 ### 2.3 array [585](100-1000/585.Investment_in_2016.sql)
+
+### 2.4 Boolean [1440](1301-1700/1440.Evaluate_boolean_expression.sql)
