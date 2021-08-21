@@ -21,8 +21,16 @@ ORDER BY avg(rating) DESC, m1.title
   + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
 + last_day("2011-03-03") -> "2011-03-31"
 + STR_TO_DATE(string, format)
-  + % e numeric MONTH
-  + % c numeric DAY
+  + % e numeric DAY 0-31
+  + % d numerica DAY 01-31
+  + % c numeric MONTH 0-12
+  + % W full day name
+  + % a abbr day name
+  + % M month name
+
++ biggest window
+  + lead + datediff [1709](1701-2000/1709.Biggest_window_between_visits.sql)
++ date overlap [1747](1701-2000/1747.Leeflex_banned_accounts.sql)
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
@@ -57,17 +65,24 @@ ORDER BY avg(rating) DESC, m1.title
   + in a range exclusively
     + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
     + group by + having min>= AND max<= [1084](1001-1300/1084.Sales_analysis_iii.sql)
-  + full list by condition, including 0 case
+### 1.7 FUll List
+  + including 0 case
     + not in [1098](1001-1300/1098.Unpopular_books.sql)
     + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
     + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
     + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
-  + full list with cumsum (date range)
+    + recursive id+1/id-1 [1767](1701-2000/1767.Find_the_subtask_that_did_not_execute.sql)
+  + filter
+    + union all + where [1907](1701-2000/1907.Count_salary_categories.sql)
+    + union all + left join [1892]()
+  + with cumsum (date range)
     + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
+
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
   +  3+Consecutive id [1811](1701-2000/1811.Find_interview_candidates.sql)
+  +  2+consecutive id [1843](1701-2000/1843.Suspicious_bank_accounts.sql)
 
 
 
