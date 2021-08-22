@@ -27,6 +27,7 @@ ORDER BY avg(rating) DESC, m1.title
   + % W full day name
   + % a abbr day name
   + % M month name
++ "2020-01-01" +interval 1 day
 
 + biggest window
   + lead + datediff [1709](1701-2000/1709.Biggest_window_between_visits.sql)
@@ -73,7 +74,7 @@ ORDER BY avg(rating) DESC, m1.title
     + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
     + recursive id+1/id-1 [1767](1701-2000/1767.Find_the_subtask_that_did_not_execute.sql)
   + filter
-    + union all + where [1907](1701-2000/1907.Count_salary_categories.sql)
+    + union all + where (exists) [1907](1701-2000/1907.Count_salary_categories.sql),[1917](1701-2000/1917.Leetcodify_friends_recommendations.sql),[1919](1701-2000/1919.Leetcodify_similar_friends.sql)
     + union all + left join [1892]()
   + with cumsum (date range)
     + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
@@ -103,3 +104,6 @@ ORDER BY avg(rating) DESC, m1.title
 ### 2.3 array [585](100-1000/585.Investment_in_2016.sql)
 
 ### 2.4 Boolean [1440](1301-1700/1440.Evaluate_boolean_expression.sql)
+
+### 2.5 Special Topics
+  + not in vs not exist : [1978](1701-2000/1978.Employees_whose_manager_left_the_company.sql)
