@@ -1,8 +1,9 @@
 # SQL
 
-## 0.0 Execution order
+## 0.0 Order
 
 ![](pics/order.png)
+
 [from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
 * 1. order by
@@ -35,12 +36,19 @@ ORDER BY avg(rating) DESC, m1.title
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
+    + Like: case sensitive
+      + "%ed": end with "ed"; time consuming
+      + _: matches a single character
+    + regexp:
+      + "ed": contains "ed"; like "ed" --> is "ed"
+      + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'--> case sensitive; "i"--> case insensitive
+      + "\\": escape
+  + soundex(): soundex value of a string
   + group_concat [1484](1301-1700/1494.Group_sold_by_products_by_the_date.sql)
   + character length (emoji/signs) [1683](1301-1700/1683.Invalid_tweets.sql)
 
 ### 1.3 Break columns
   + if function [1322](1301-1700/1322.Ads_performance.sql), [1205](1001-1300/1205.Monthly_transction_ii.sql)
-  + row_num+group by ~(pivot) [618](100-1000/618.Students_report_by_geography.sql)
   + time period with recursive [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
 ### 1.4 Merge columns
@@ -49,8 +57,9 @@ ORDER BY avg(rating) DESC, m1.title
 
 ### 1.5 Combine rows (pivot)
   + AS + union all + group by [1841](1701-2000/1841.League_statistics.sql)
-  + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql)
+  + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql),[hr](hr1-100/occupation_pivot.sql)
   + sum(case when) [1445](1301-1700/1445.Apples_oranges.sql)
+  + row_num+case when +group by  [618](100-1000/618.Students_report_by_geography.sql)
 
 ### 1.6 extract info from each group by condition
   + maximum:
@@ -66,7 +75,7 @@ ORDER BY avg(rating) DESC, m1.title
   + in a range exclusively
     + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
     + group by + having min>= AND max<= [1084](1001-1300/1084.Sales_analysis_iii.sql)
-### 1.7 FUll List
+### 1.7 Full List
   + including 0 case
     + not in [1098](1001-1300/1098.Unpopular_books.sql)
     + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
@@ -106,4 +115,13 @@ ORDER BY avg(rating) DESC, m1.title
 ### 2.4 Boolean [1440](1301-1700/1440.Evaluate_boolean_expression.sql)
 
 ### 2.5 Special Topics
-  + not in vs not exist : [1978](1701-2000/1978.Employees_whose_manager_left_the_company.sql)
+  + where: filter rows not groups
+    + != value not return null becasue DB doesn't know if they match
+    + not in vs not exist : [1978](1701-2000/1978.Employees_whose_manager_left_the_company.sql)
+    + () > AND > OR (don't rely on default order, use parentheses)
+    + IN is faster than OR
+    + NOT + in/exists/between and
+  + greatest()
+  + convert(v,type)
+  + ceil()
+  +
