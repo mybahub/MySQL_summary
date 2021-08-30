@@ -104,6 +104,31 @@ ORDER BY avg(rating) DESC, m1.title
 
 
 ### 1.3 Break & merge columns/rows
+
+* Break columns
+### 1.3 Break columns
+<table>
+  <tr>
+    <th>Method</th>
+    <th>Question</th>
+    <th> Solution </th
+  </tr>
+ <tr>
+	  <td rowspan="2" align="center">if()</td>
+	  <td> <a href="https://leetcode.com/problems/ads-performance"> 1322. Ads Performance</a> </td>
+	  <td> 	<a href="1301-1700/1322.Ads_performance.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td> <a href="https://leetcode.com/problems/monthly-transactions-ii"> 1205. Monthly Transactions II</a> </td>
+	  <td> 	<a href="1001-1300/1205.Monthly_transction_ii.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td align="center" >time span: recursive </td>
+	  <td> <a href="https://leetcode.com/problems/total-sales-amount-by-year"> 1384. Total Sales Amount by Year</a> </td>
+	  <td> 	<a href="1301-1700/1384Total_sales_amount_by_year.sql">Sol</a> </td>
+ </tr>
+ </table>
+
 <table>
   <tr>
     <th>Action</th>
