@@ -169,6 +169,8 @@ ORDER BY avg(rating) DESC, m1.title
 
 </table>
 
+&nbsp;
+
 ### 1.4 Extract info from each group by condition
 
 <table>
@@ -234,6 +236,20 @@ ORDER BY avg(rating) DESC, m1.title
 
 </table>
 
+&nbsp;
+
+### 1.7 Full List
+  + including 0 case
+    + not in [1098](1001-1300/1098.Unpopular_books.sql)
+    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
+    + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
+    + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
+    + recursive id+1/id-1 [1767](1701-2000/1767.Find_the_subtask_that_did_not_execute.sql)
+  + filter
+    + union all + where (exists) [1907](1701-2000/1907.Count_salary_categories.sql),[1917](1701-2000/1917.Leetcodify_friends_recommendations.sql),[1919](1701-2000/1919.Leetcodify_similar_friends.sql)
+    + union all + left join [1892]()
+  + with cumsum (date range)
+    + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
 
 
 ### 1.7 Consecutive values
