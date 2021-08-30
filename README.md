@@ -4,26 +4,24 @@
   <tr>
     <th>Action</th>
     <th>Method</th>
-    <th>Solution</th>
+    <th>Question</th>
+    <th> Solution </th
   </tr>
-  <tr>
-    <td rowspan="3" align="center">row 1 & 2 - column 3</td>
-    <td>
-    <a href="/1301-1700/1384Total_sales_amount_by_year.sql">
-	    break down</a>
-	    ,
-      <a href="1301-1700/1384Total_sales_amount_by_year.sql">
-  	    break down</a>,
-    <a href="http://google.com">
-	    break down</a>
-	    </td>
-    <td>Recursive</td>
+ <tr>
+	  <td>break down time span</td>
+	  <td> Recursion</td>
+	  <td> <a href="https://leetcode.com/problems/total-sales-amount-by-year"> 1384. Total Sales Amount by Year</a> </td>
+	  <td> 	<a href="1301-1700/1384Total_sales_amount_by_year.sql">Sol</a> </td>
   </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
+ <tr>
+	  <td>date shift </td>
+	  <td> join + DATE_SUB</td>
+	  <td> <a href="https://leetcode.com/problems/game-play-analysis-v"> 1097. Game Play Analysis V</a> </td>
+	  <td> 	<a href="1001-1300/1097.Game_play_analysi_V.sql">Sol</a> </td>
   </tr>
+
 </table>
+
 
 ## 0.0 Semantic
 
