@@ -1,4 +1,27 @@
-# SQL
+# MySQL Summary
+
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Method</th>
+    <th>Solution</th>
+  </tr>
+  <tr>
+    <td rowspan="3" align="center">row 1 & 2 - column 3</td>
+    <td>
+    <a href="http://google.com">
+	    break down</a>
+	    ,
+    <a href="http://google.com">
+	    break down</a>
+	    </td>
+    <td>Recursive</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
 
 ## 0.0 Semantic
 
@@ -61,7 +84,7 @@ ORDER BY avg(rating) DESC, m1.title
   + sum(case when) [1445](1301-1700/1445.Apples_oranges.sql)
   + row_num+case when +group by  [618](100-1000/618.Students_report_by_geography.sql)
 
-### 1.6 extract info from each group by condition
+### 1.6 Extract info from each group by condition
   + maximum:
     + max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
     + count()>=all() [1076](1001-1300/1076.Project_employee_ii.sql)
@@ -96,7 +119,8 @@ ORDER BY avg(rating) DESC, m1.title
 
 
 
-## 2.0
+## 2.0 Concepts
+
 ### 2.1 Recursive
 * break one row [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
@@ -110,7 +134,7 @@ ORDER BY avg(rating) DESC, m1.title
   + second most recent [1369](1301-1700/1369.Get_the_second_most_recent_activity.sql)
   + Highest grade for each student [1112](1001-1300/1112Highest_grade_for_each_student.sql)
 
-### 2.3 array [585](100-1000/585.Investment_in_2016.sql)
+### 2.3 Array [585](100-1000/585.Investment_in_2016.sql)
 
 ### 2.4 Boolean [1440](1301-1700/1440.Evaluate_boolean_expression.sql)
 

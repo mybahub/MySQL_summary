@@ -1,4 +1,5 @@
 /*hard
+https://leetcode.com/problems/total-sales-amount-by-year
 1.how to break one record into several records
 2. cut off the datetimes
 */
