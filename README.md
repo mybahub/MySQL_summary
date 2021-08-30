@@ -1,19 +1,19 @@
 # SQL
 
-## 0.0 Order
+## 0.0 Semantic
 
 ![](pics/order.png)
 
 [from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
 * 1. order by
+
 ``` sql
 GROUP BY m1.title
 ORDER BY avg(rating) DESC, m1.title
 ```
 
-* 2. SELECT transform -> GROUP BY [1543](1301-1700/1543.Fix_product_name_format.sql)
-
+* 2. UNION > ORDER BY (UNION takes only the last order by)
 
 ## 1.0 Topics
 ### 1.1 Date
@@ -42,7 +42,7 @@ ORDER BY avg(rating) DESC, m1.title
     + regexp:
       + "ed": contains "ed"; like "ed" --> is "ed"
       + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'--> case sensitive; "i"--> case insensitive
-      + "\\": escape
+      + "\\\": escape
   + soundex(): soundex value of a string
   + group_concat [1484](1301-1700/1494.Group_sold_by_products_by_the_date.sql)
   + character length (emoji/signs) [1683](1301-1700/1683.Invalid_tweets.sql)
@@ -124,4 +124,3 @@ ORDER BY avg(rating) DESC, m1.title
   + greatest()
   + convert(v,type)
   + ceil()
-  +
