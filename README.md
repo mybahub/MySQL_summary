@@ -33,7 +33,7 @@ ORDER BY avg(rating) DESC, m1.title
   </tr>
  <tr>
 	  <td>date shift </td>
-	  <td> join + DATE_SUB</td>
+	  <td> join + date_sub</td>
 	  <td> <a href="https://leetcode.com/problems/game-play-analysis-v"> 1097. Game Play Analysis V</a> </td>
 	  <td> 	<a href="1001-1300/1097.Game_play_analysi_V.sql">Sol</a> </td>
   </tr>
@@ -45,7 +45,7 @@ ORDER BY avg(rating) DESC, m1.title
   </tr>
 
   <tr>
-	  <td>date overlap </td>
+	  <td>find date overlap </td>
 	  <td>join+where</td>
 	  <td> <a href="https://leetcode.com/problems/leetflex-banned-accounts/"> 1747. Leetflex Banned Accounts</a> </td>
 	  <td> 	<a href="1701-2000/1747.Leeflex_banned_accounts.sql">Sol</a> </td>
@@ -53,7 +53,7 @@ ORDER BY avg(rating) DESC, m1.title
 
   </table>
 
-+ last_day("2011-03-03") -> "2011-03-31"
++ last_day("2011-03-03") ==> "2011-03-31"
 + STR_TO_DATE(string, format)
   + % e numeric DAY 0-31
   + % d numerica DAY 01-31
@@ -65,17 +65,42 @@ ORDER BY avg(rating) DESC, m1.title
 
 
 ### 1.2 Text
-  + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
-    + Like: case sensitive
-      + "%ed": end with "ed"; time consuming
-      + _: matches a single character
-    + regexp:
-      + "ed": contains "ed"; like "ed" --> is "ed"
-      + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'--> case sensitive; "i"--> case insensitive
-      + "\\\": escape
-  + soundex(): soundex value of a string
-  + group_concat [1484](1301-1700/1494.Group_sold_by_products_by_the_date.sql)
-  + character length (emoji/signs) [1683](1301-1700/1683.Invalid_tweets.sql)
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Method</th>
+    <th>Question</th>
+    <th> Solution </th
+  </tr>
+ <tr>
+	  <td>exist a pattern</td>
+	  <td> Like/REGEXP_LIKE</td>
+	  <td> <a href="https://leetcode.com/problems/patients-with-a-condition"> 1527. Patients With a Condition</a> </td>
+	  <td> 	<a href="1301-1700/1527.Patients_with_a_condition.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td>group 2+ strings </td>
+	  <td> group_concat()</td>
+	  <td> <a href="https://leetcode.com/problems/group-sold-products-by-the-date/"> 1484. Group Sold Products By The Date</a> </td>
+	  <td> 	<a href="1301-1700/1494.Group_sold_by_products_by_the_date.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td>character length (emoji/signs) </td>
+	  <td>lead() + datediff()</td>
+	  <td> <a href="https://leetcode.com/problems/invalid-tweets/"> 1683. Invalid Tweets</a> </td>
+	  <td> 	<a href="1301-1700/1683.Invalid_tweets.sql">Sol</a> </td>
+ </tr>
+</table>
+
++ Like: case sensitive
+  + "%ed": end with "ed"; time consuming
+  + _: matches a single character
++ regexp:
+  + "ed": contains "ed"; like "ed" --> is "ed"
+  + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'--> case sensitive; "i"--> case insensitive
+  + "\\\": escape
++ soundex(): soundex value of a string
+
 
 ### 1.3 Break columns
   + if function [1322](1301-1700/1322.Ads_performance.sql), [1205](1001-1300/1205.Monthly_transction_ii.sql)
