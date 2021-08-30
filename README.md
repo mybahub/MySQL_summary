@@ -105,30 +105,6 @@ ORDER BY avg(rating) DESC, m1.title
 
 ### 1.3 Break & merge columns/rows
 
-* Break columns
-### 1.3 Break columns
-<table>
-  <tr>
-    <th>Method</th>
-    <th>Question</th>
-    <th> Solution </th
-  </tr>
- <tr>
-	  <td rowspan="2" align="center">if()</td>
-	  <td> <a href="https://leetcode.com/problems/ads-performance"> 1322. Ads Performance</a> </td>
-	  <td> 	<a href="1301-1700/1322.Ads_performance.sql">Sol</a> </td>
- </tr>
- <tr>
-	  <td> <a href="https://leetcode.com/problems/monthly-transactions-ii"> 1205. Monthly Transactions II</a> </td>
-	  <td> 	<a href="1001-1300/1205.Monthly_transction_ii.sql">Sol</a> </td>
- </tr>
- <tr>
-	  <td align="center" >time span: recursive </td>
-	  <td> <a href="https://leetcode.com/problems/total-sales-amount-by-year"> 1384. Total Sales Amount by Year</a> </td>
-	  <td> 	<a href="1301-1700/1384Total_sales_amount_by_year.sql">Sol</a> </td>
- </tr>
- </table>
-
 <table>
   <tr>
     <th>Action</th>
@@ -154,7 +130,7 @@ ORDER BY avg(rating) DESC, m1.title
   <tr>
 	  <td rowspan="3" align="center">merge/stack columns</td>
 	  <td rowspan="3" align="center"> union/union all</td>
-	<td> <a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
+	<td> <a href="https://leetcode.com/problems/consecutive-available-seats"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
 	  <td> 	<a href="100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql">Sol</a> </td>
  </tr>
  <tr>
@@ -193,32 +169,71 @@ ORDER BY avg(rating) DESC, m1.title
 
 </table>
 
-### 1.6 Extract info from each group by condition
-  + maximum:
-    + max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
-    + count()>=all() [1076](1001-1300/1076.Project_employee_ii.sql)
-  + most recent : dense_rank() [1549](1301-1700/1549.The_most_recent_orders_for_each_product.sql), [1532](1301-1700/1532.The_most_recent_three_orders.sql)
-  + median
-    + restore full list (recursive +row_number+between max/2 and max/2+1) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
-    + frequency table (create intervals + between +avg) [517](100-1000/571.Find_median_given_frequency_of_numbers.sql)
-  + running sum
-    + sum()+ wf order by [1308](1301-1700/1308.Running_total_for_different_genders.sql),[1321](1301-1700/1321.Restaurant_growth.sql)
-    + select filter in suqery [1308](1301-1700/1308.Running_total_for_different_genders.sql)
-  + in a range exclusively
-    + in and not in [1084](1001-1300/1084.Sales_analysis_iii.sql)
-    + group by + having min>= AND max<= [1084](1001-1300/1084.Sales_analysis_iii.sql)
-### 1.7 Full List
-  + including 0 case
-    + not in [1098](1001-1300/1098.Unpopular_books.sql)
-    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
-    + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
-    + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
-    + recursive id+1/id-1 [1767](1701-2000/1767.Find_the_subtask_that_did_not_execute.sql)
-  + filter
-    + union all + where (exists) [1907](1701-2000/1907.Count_salary_categories.sql),[1917](1701-2000/1917.Leetcodify_friends_recommendations.sql),[1919](1701-2000/1919.Leetcodify_similar_friends.sql)
-    + union all + left join [1892]()
-  + with cumsum (date range)
-    + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
+### 1.4 Extract info from each group by condition
+
+<table>
+<tr>
+  <th>Action</th>
+  <th>Method</th>
+  <th>Question</th>
+  <th> Solution </th
+</tr>
+<tr>
+  <td rowspan="2" align="center">maximum</td>
+  <td align="center">max+partition by</td>
+  <td> <a href="https://leetcode.com/problems/project-employees-iii"> 1077. Project Employees III</a> </td>
+  <td> 	<a href="1001-1300/1077.Project_employee_ii.sql">Sol</a> </td>
+</tr>
+<tr>
+ <td align="center">count()>=all()</td>
+  <td> <a href="https://leetcode.com/problems/project-employees-ii"> 1076. Project Employees II</a> </td>
+  <td> 	<a href="1001-1300/1076.Project_employee_ii.sql">Sol</a> </td>
+</tr>
+<tr>
+  <td rowspan=2 align="center" >most recent </td>
+  <td rowspan=2 align="center" >dense_rank()</td>
+  <td> <a href="https://leetcode.com/problems/the-most-recent-orders-for-each-product"> 1549. The Most Recent Orders for Each Product</a> </td>
+  <td> 	<a href="1301-1700/1549.The_most_recent_orders_for_each_product.sql">Sol</a> </td>
+</tr>
+<tr>
+  <td> <a href="https://leetcode.com/problems/the-most-recent-three-orders"> 1532. The Most Recent Three Orders</a> </td>
+  <td> 	<a href="1301-1700/1532.The_most_recent_three_orders.sql">Sol</a> </td>
+</tr>
+<tr>
+  <td rowspan="2" align="center">median</td>
+  <td align="center"> restore full list (recursive +row_number+between max/2 and max/2+1)</td>
+<td> <a href="https://leetcode.com/problems/find-median-given-frequency-of-numbers"> 571. Find Median Given Frequency of Numbers</a> </td>
+  <td> 	<a href="100-1000/571.Find_median_given_frequency_of_numbers.sql">Sol</a> </td>
+</tr>
+<tr>
+  <td align="center"> frequency table (create intervals + between +avg)</td>
+<td> <a href="https://leetcode.com/problems/find-median-given-frequency-of-numbers"> 571. Find Median Given Frequency of Numbers</a> </td>
+  <td> 	<a href="100-1000/571.Find_median_given_frequency_of_numbers.sql">Sol</a> </td>
+</tr>
+<tr>
+ <td rowspan=2 align="center">running sum</td>
+ <td rowspan=2 align="center">sum()+ window function order by</td>
+<td ><a href="https://leetcode.com/problems/running-total-for-different-genders/">1308. Running Total for Different Genders</a></td>
+ <td> <a href="1301-1700/1308.Running_total_for_different_genders.sql">Sol</a></td>
+</tr>
+<tr>
+<td ><a href="https://leetcode.com/problems/restaurant-growth/">1321. Restaurant Growth</a></td>
+ <td> <a href="1301-1700/1321.Restaurant_growth.sql">Sol</a></td>
+</tr>
+<tr>
+ <td rowspan=2 align="center">in a range exclusively</td>
+ <td align="center">in and not in</td>
+<td ><a href="https://leetcode.com/problems/sales-analysis-iii/">1084. Sales Analysis III</a></td>
+ <td> <a href="1001-1300/1084.Sales_analysis_iii.sql">Sol</a></td>
+</tr>
+<tr>
+ <td align="center">group by + having min>= AND max<=</td>
+<td ><a href="https://leetcode.com/problems/sales-analysis-iii/">1084. Sales Analysis III</a></td>
+ <td> <a href="1001-1300/1084.Sales_analysis_iii.sql">Sol</a></td>
+</tr>
+
+</table>
+
 
 
 ### 1.7 Consecutive values

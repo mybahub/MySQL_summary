@@ -1,4 +1,6 @@
-/* Medium */
+/* Medium
+https://leetcode.com/problems/project-employees-iii
+*/
 
 /* Solution 1
 max+ partition by
