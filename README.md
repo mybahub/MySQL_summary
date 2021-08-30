@@ -82,7 +82,7 @@ ORDER BY avg(rating) DESC, m1.title
 	  <td>group 2+ strings </td>
 	  <td> group_concat()</td>
 	  <td> <a href="https://leetcode.com/problems/group-sold-products-by-the-date/"> 1484. Group Sold Products By The Date</a> </td>
-	  <td> 	<a href="1301-1700/1494.Group_sold_by_products_by_the_date.sql">Sol</a> </td>
+	  <td> 	<a href="1301-1700/1484.Group_sold_by_products_by_the_date.sql">Sol</a> </td>
  </tr>
  <tr>
 	  <td>character length (emoji/signs) </td>
@@ -96,26 +96,77 @@ ORDER BY avg(rating) DESC, m1.title
   + "%ed": end with "ed"; time consuming
   + _: matches a single character
 + regexp:
-  + "ed": contains "ed"; like "ed" --> is "ed"
-  + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'--> case sensitive; "i"--> case insensitive
+  + "ed": contains "ed"; like "ed" ==> is "ed"
+  + REGEXP_LIKE('Cat', '^ca', 'c'): 'c'==> case sensitive; "i"==> case insensitive
   + "\\\": escape
 + soundex(): soundex value of a string
 
 
-### 1.3 Break columns
-  + if function [1322](1301-1700/1322.Ads_performance.sql), [1205](1001-1300/1205.Monthly_transction_ii.sql)
-  + time period with recursive [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
-### 1.4 Merge columns
-  + stack columns with union all [1783](1301-1700/1783.Grand_Slam_Titles.sql),[602](100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql),[1795](1701-2000/1795.Rearrange_products_table.sql)
+### 1.3 Break & merge columns/rows
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Method</th>
+    <th>Question</th>
+    <th> Solution </th
+  </tr>
+ <tr>
+	  <td rowspan="3" align="center">break columns</td>
+	  <td rowspan="2" align="center">if()</td>
+	  <td> <a href="https://leetcode.com/problems/ads-performance"> 1322. Ads Performance</a> </td>
+	  <td> 	<a href="1301-1700/1322.Ads_performance.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td> <a href="https://leetcode.com/problems/monthly-transactions-ii"> 1205. Monthly Transactions II</a> </td>
+	  <td> 	<a href="1001-1300/1205.Monthly_transction_ii.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td align="center" >time span: recursive </td>
+	  <td> <a href="https://leetcode.com/problems/total-sales-amount-by-year"> 1384. Total Sales Amount by Year</a> </td>
+	  <td> 	<a href="1301-1700/1384Total_sales_amount_by_year.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td rowspan="3" align="center">merge/stack columns</td>
+	  <td rowspan="3" align="center"> union/union all</td>
+	<td> <a href="https://leetcode.com/problems/consecutive-available-seats"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
+	  <td> 	<a href="100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql">Sol</a> </td>
+ </tr>
+ <tr>
+ 	  <td> <a href="https://leetcode.com/problems/grand-slam-titles"> 1783. Grand Slam Titles</a> </td>
+	  <td> 	<a href="1701-2000/1783.Grand_Slam_Titles.sql">Sol</a> </td>
+ </tr>
+ <tr>
+ 	  <td> <a href="https://leetcode.com/problems/rearrange-products-table"> 1795.  Rearrange Products Table</a>
+ </td>
+	  <td> 	<a href="1701-2000/1795.Rearrange_products_table.sql">Sol</a> </td>
+  <tr>
+	  <td rowspan="5" align="center">combine rows/pivot</td>
+	  <td align="center"> as+union all+group by</td>
+	<td> <a href="https://leetcode.com/problems/league-statistics"> 1841. League Statistics</a> </td>
+	  <td> 	<a href="1701-2000/1841.League_statistics.sql">Sol</a> </td>
+ </tr>
+  <tr>
+  <td rowspan="2" align="center">if + max + group by</td>
+ 	  <td> <a href="https://leetcode.com/problems/products-price-for-each-store"> 1777. Product's Price for Each Store</a>
+ 	<td><a href="1701-2000/1777.Product_price_for_each_store.sql">Sol </a></td>
+ </tr>
+ <tr>
+ 	  <td> <a href="https://www.hackerrank.com/challenges/occupations/problem"> Occupation</a>
+ 	<td><a href="hr1-100/occupation_pivot.sql">Sol </a></td>
+ </tr>
+  <tr>
+	  <td align="center"> sum(case when)</td>
+ 	  <td> <a href="https://leetcode.com/problems/apples-oranges/"> 1445. Apples & Oranges</a>
+ 	<td><a href="1301-1700/1445.Apples_oranges.sql">Sol </a></td>
+ </tr>
+   <tr>
+	  <td align="center"> row_number()+case when +group by</td>
+ 	  <td> <a href="https://leetcode.com/problems/students-report-by-geography"> 618. Students Report By Geography</a>
+ 	<td><a href="100-1000/618.Students_report_by_geography.sql">Sol </a></td>
+ </tr>
 
-
-### 1.5 Combine rows (pivot)
-  + AS + union all + group by [1841](1701-2000/1841.League_statistics.sql)
-  + if + max + group by [1777](1701-2000/1777.Product_price_for_each_store.sql),[hr](hr1-100/occupation_pivot.sql)
-  + sum(case when) [1445](1301-1700/1445.Apples_oranges.sql)
-  + row_num+case when +group by  [618](100-1000/618.Students_report_by_geography.sql)
-
+</table>
 ### 1.6 Extract info from each group by condition
   + maximum:
     + max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
