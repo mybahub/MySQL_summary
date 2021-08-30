@@ -1,5 +1,23 @@
 # MySQL Summary
 
+
+## 0.0 Semantic
+
+![](pics/order.png)
+
+[from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
+
+* 1. order by
+
+``` sql
+GROUP BY m1.title
+ORDER BY avg(rating) DESC, m1.title
+```
+
+* 2. UNION > ORDER BY (UNION takes only the last order by)
+
+## 1.0 Topics
+### 1.1 Date
 <table>
   <tr>
     <th>Action</th>
@@ -19,30 +37,23 @@
 	  <td> <a href="https://leetcode.com/problems/game-play-analysis-v"> 1097. Game Play Analysis V</a> </td>
 	  <td> 	<a href="1001-1300/1097.Game_play_analysi_V.sql">Sol</a> </td>
   </tr>
-
+  <tr>
+ 	  <td>biggest window </td>
+ 	  <td>lead() + datediff()</td>
+ 	  <td> <a href="https://leetcode.com/problems/biggest-window-between-visits/"> 1709. Biggest Window Between Visits</a> </td>
+ 	  <td> 	<a href="1701-2000/1709.Biggest_window_between_visits.sql">Sol</a> </td>
+  </tr>
+  <tr>
+   <td>biggest window </td>
+   <td>lead() + datediff()</td>
+   <td> <a href="https://leetcode.com/problems/biggest-window-between-visits/"> 1709. Biggest Window Between Visits</a> </td>
+   <td> 	<a href="1701-2000/1709.Biggest_window_between_visits.sql">Sol</a> </td>
+</tr>
+ <tr>
+   <td>date overlap </td>
+   <td>join+where</td>
 </table>
 
-
-## 0.0 Semantic
-
-![](pics/order.png)
-
-[from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
-
-* 1. order by
-
-``` sql
-GROUP BY m1.title
-ORDER BY avg(rating) DESC, m1.title
-```
-
-* 2. UNION > ORDER BY (UNION takes only the last order by)
-
-## 1.0 Topics
-### 1.1 Date
-* break down [1384](1301-1700/1384Total_sales_amount_by_year.sql)
-* date shift
-  + join + DATE_SUB [1097](1001-1300/1097.Game_play_analysi_V.sql)
 + last_day("2011-03-03") -> "2011-03-31"
 + STR_TO_DATE(string, format)
   + % e numeric DAY 0-31
@@ -53,9 +64,6 @@ ORDER BY avg(rating) DESC, m1.title
   + % M month name
 + "2020-01-01" +interval 1 day
 
-+ biggest window
-  + lead + datediff [1709](1701-2000/1709.Biggest_window_between_visits.sql)
-+ date overlap [1747](1701-2000/1747.Leeflex_banned_accounts.sql)
 
 ### 1.2 Text
   + Exist a pattern (Like/REGEXP_LIKE)[1527](1301-1700/1527.Patients_with_a_condition.sql)
