@@ -114,12 +114,12 @@ ORDER BY avg(rating) DESC, m1.title
  <tr>
 	  <td rowspan="3" align="center">break columns</td>
 	  <td rowspan="2" align="center">if()</td>
-	  <td> <a href="https://leetcode.com/problems/ads-performance"> 1322. Ads Performance</a> </td>
-	  <td> 	<a href="1301-1700/1322.Ads_performance.sql">Sol</a> </td>
+    <td> <a href="https://leetcode.com/problems/monthly-transactions-ii"> 1205. Monthly Transactions II</a> </td>
+    <td> 	<a href="1001-1300/1205.Monthly_transction_ii.sql">Sol</a> </td>
  </tr>
  <tr>
-	  <td> <a href="https://leetcode.com/problems/monthly-transactions-ii"> 1205. Monthly Transactions II</a> </td>
-	  <td> 	<a href="1001-1300/1205.Monthly_transction_ii.sql">Sol</a> </td>
+   <td> <a href="https://leetcode.com/problems/ads-performance"> 1322. Ads Performance</a> </td>
+   <td> 	<a href="1301-1700/1322.Ads_performance.sql">Sol</a> </td>
  </tr>
  <tr>
 	  <td align="center" >time span: recursive </td>
@@ -129,7 +129,7 @@ ORDER BY avg(rating) DESC, m1.title
   <tr>
 	  <td rowspan="3" align="center">merge/stack columns</td>
 	  <td rowspan="3" align="center"> union/union all</td>
-	<td> <a href="https://leetcode.com/problems/consecutive-available-seats"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
+	<td> <a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
 	  <td> 	<a href="100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql">Sol</a> </td>
  </tr>
  <tr>
@@ -167,6 +167,7 @@ ORDER BY avg(rating) DESC, m1.title
  </tr>
 
 </table>
+
 ### 1.6 Extract info from each group by condition
   + maximum:
     + max+partition by [1077](1001-1300/1077.Project_employee_ii.sql)
