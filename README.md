@@ -171,7 +171,7 @@ ORDER BY avg(rating) DESC, m1.title
 
 &nbsp;
 
-### 1.4 Extract info from each group by condition
+### 1.4 Extract information from each group by condition
 
 <table>
 <tr>
@@ -238,19 +238,69 @@ ORDER BY avg(rating) DESC, m1.title
 
 &nbsp;
 
-### 1.7 Full List
-  + including 0 case
-    + not in [1098](1001-1300/1098.Unpopular_books.sql)
-    + left join + if/case when [1098](1001-1300/1098.Unpopular_books.sql), [1158](1001-1300/1158.Market_analysis_i.sql)
-    + left join + filter in ON [1098](1001-1300/1098.Unpopular_books.sql)
-    + cross join + left join [1280](1001-1300/1280.Students_and_examinations.sql)
-    + recursive id+1/id-1 [1767](1701-2000/1767.Find_the_subtask_that_did_not_execute.sql)
-  + filter
-    + union all + where (exists) [1907](1701-2000/1907.Count_salary_categories.sql),[1917](1701-2000/1917.Leetcodify_friends_recommendations.sql),[1919](1701-2000/1919.Leetcodify_similar_friends.sql)
-    + union all + left join [1892]()
-  + with cumsum (date range)
-    + recursive+ case when + group by [1645](1301-1700/1645.Hopper_company_queries_ii.sql)
+### 1.5 Full List
 
+<table>
+  <tr>
+    <th>Context</th>
+    <th>Method</th>
+    <th>Question</th>
+    <th> Solution </th
+  </tr>
+ <tr>
+	  <td rowspan=5 align="center">including 0 case</td>
+	  <td align="center">not in</td>
+	  <td> <a href="https://leetcode.com/problems/unpopular-books/"> 1098. Unpopular Books</a> </td>
+	  <td> 	<a href="1001-1300/1098.Unpopular_books.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td align="center">left join + if/case when</td>
+	  <td> <a href="https://leetcode.com/problems/market-analysis-i/"> 1158. Market Analysis I</a> </td>
+	  <td> 	<a href="1001-1300/1158.Market_analysis_i.sql">Sol</a> </td>
+ </tr>
+   <tr>
+	  <td align="center">left join + filter in ON</td>
+	  <td> <a href="https://leetcode.com/problems/unpopular-books/"> 1098. Unpopular Books</a> </td>
+	  <td> 	<a href="1001-1300/1098.Unpopular_books.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td align="center">cross join + left join</td>
+	  <td> <a href="https://leetcode.com/problems/students-and-examinations/"> 1280. Students and Examinations</a> </td>
+	  <td> 	<a href="1001-1300/1280.Students_and_examinations.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td align="center">recursive id+1/id-1</td>
+	  <td> <a href="https://leetcode.com/problems/find-the-subtasks-that-did-not-execute/"> 1767. Find the Subtasks That Did Not Execute</a> </td>
+	  <td> 	<a href="1701-2000/1767.Find_the_subtask_that_did_not_execute.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td rowspan=4 align="center">filter</td>
+	  <td rowspan=3 align="center">union all + where (exists)</td>
+	  <td> <a href="https://leetcode.com/problems/count-salary-categories/"> 1907. Count Salary Categories</a> </td>
+	  <td> 	<a href="1701-2000/1907.Count_salary_categories.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td> <a href="https://leetcode.com/problems/leetcodify-friends-recommendations/"> 1917. Leetcodify Friends Recommendations</a> </td>
+	  <td> 	<a href="1701-2000/1917.Leetcodify_friends_recommendations.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td> <a href="https://leetcode.com/problems/leetcodify-similar-friends/"> 1919. Leetcodify Similar Friends</a> </td>
+	  <td> 	<a href="1701-2000/1919.Leetcodify_similar_friends.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	 <td>union all + left join</td>
+	  <td> <a href="https://leetcode.com/problems/page-recommendations-ii/"> 1892. Page Recommendations II</a> </td>
+	  <td> 	<a href="1701-2000/1892.Page_recommendation_ii.sql">Sol</a> </td>
+ </tr>
+ <tr>
+	  <td align="center">with cumsum (date range)</td>
+	  <td align="center">recursive+ case when + group by</td>
+	  <td> <a href="https://leetcode.com/problems/hopper-company-queries-ii/"> 1645. Hopper Company Queries II</a> </td>
+	  <td> 	<a href="1301-1700/1645.Hopper_company_queries_ii.sql">Sol</a> </td>
+ </tr>
+ <table>
+
+&nbsp;
 
 ### 1.7 Consecutive values
   +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
