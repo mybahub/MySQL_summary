@@ -328,11 +328,16 @@ ORDER BY avg(rating) DESC, m1.title
 	  <td> 	<a href="1701-2000/1843.Suspicious_bank_accounts.sql">Sol</a> </td>
  </tr>
   <tr>
-	  <td align="center">consecutive id</td>
+	  <td rowspan=2 align="center">consecutive id</td>
 	  <td align="center">id-row_number()+group by</td>
 	  <td> <a href="https://leetcode.com/problems/find-interview-candidates"> 1811. Find Interview Candidates</a> </td>
 	  <td> 	<a href="1701-2000/1811.Find_interview_candidates.sql">Sol</a> </td>
  </tr>
+ <tr>
+  <td align="center">lead()/lag() by</td>
+  <td> <a href="https://leetcode.com/problems/consecutive-numbers/"> 180. Consecutive Numbers</a> </td>
+  <td> 	<a href="100-1000/180.Consecutive_numbers.sql">Sol</a> </td>
+</tr>
 </table>
 
 &nbsp;
