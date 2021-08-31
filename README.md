@@ -334,7 +334,7 @@ ORDER BY avg(rating) DESC, m1.title
 	  <td> 	<a href="1701-2000/1811.Find_interview_candidates.sql">Sol</a> </td>
  </tr>
  <tr>
-  <td align="center">lead()/lag() by</td>
+  <td align="center">lead()/lag() </td>
   <td> <a href="https://leetcode.com/problems/consecutive-numbers/"> 180. Consecutive Numbers</a> </td>
   <td> 	<a href="100-1000/180.Consecutive_numbers.sql">Sol</a> </td>
 </tr>
