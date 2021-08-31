@@ -63,6 +63,7 @@ ORDER BY avg(rating) DESC, m1.title
   + % M month name
 + "2020-01-01" +interval 1 day
 
+&nbsp;
 
 ### 1.2 Text
 <table>
@@ -101,7 +102,7 @@ ORDER BY avg(rating) DESC, m1.title
   + "\\\": escape
 + soundex(): soundex value of a string
 
-
+&nbsp;
 
 ### 1.3 Break & merge columns/rows
 
@@ -302,12 +303,39 @@ ORDER BY avg(rating) DESC, m1.title
 
 &nbsp;
 
-### 1.7 Consecutive values
-  +  Consecutive date [550](100-1000/550.Game_play_analysis_IV.sql), [1454](1301-1700/1454.Active_users.sql)
-  +  3+Consecutive id [1811](1701-2000/1811.Find_interview_candidates.sql)
-  +  2+consecutive id [1843](1701-2000/1843.Suspicious_bank_accounts.sql)
+### 1.6 Consecutive values
 
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Method</th>
+    <th>Question</th>
+    <th> Solution </th
+  </tr>
+ <tr>
+	  <td rowspan=3 align="center">consecutive date</td>
+	  <td align="center">join + where</td>
+	  <td> <a href="https://leetcode.com/problems/game-play-analysis-iv"> 550. Game Play Analysis IV</a> </td>
+	  <td> 	<a href="100-1000/550.Game_play_analysis_IV.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td rowspan=2 align="center">date_sub+row_number+group by</td>
+	  <td> <a href="https://leetcode.com/problems/active-users"> 1454. Active Users</a> </td>
+	  <td> 	<a href="1301-1700/1454.Active_users.sql">Sol</a> </td>
+ </tr>
+   <tr>
+	  <td> <a href="https://leetcode.com/problems/suspicious-bank-accounts/"> 1843. Suspicious Bank Accounts</a> </td>
+	  <td> 	<a href="1701-2000/1843.Suspicious_bank_accounts.sql">Sol</a> </td>
+ </tr>
+  <tr>
+	  <td align="center">consecutive id</td>
+	  <td align="center">id-row_number()+group by</td>
+	  <td> <a href="https://leetcode.com/problems/find-interview-candidates"> 1811. Find Interview Candidates</a> </td>
+	  <td> 	<a href="1701-2000/1811.Find_interview_candidates.sql">Sol</a> </td>
+ </tr>
+</table>
 
+&nbsp;
 
 ## 2.0 Concepts
 

@@ -1,4 +1,5 @@
 /* Medium 550. Game Play Analysis IV
+https://leetcode.com/problems/median-employee-salary
 */
 
 
@@ -18,7 +19,7 @@ WITH total_players AS(
      GROUP BY player_id
     ) b
     ON a.player_id=b.player_id
-    WHERE a.event_date=b.first_log+1
+    WHERE a.event_date=b.first_log+INTERVAL 1 DAY
 )
 
 SELECT round(count(distinct player_id) / (SELECT num FROM total_players),2) AS fraction
