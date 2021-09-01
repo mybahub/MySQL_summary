@@ -218,13 +218,13 @@ ORDER BY avg(rating) DESC, m1.title
 <tr>
   <td align="center"> desc, asc, where </td>
 <td> <a href="https://leetcode.com/problems/median-employee-salary/"> 569. Median Employee Salary</a> </td>
-  <td> 	<a href="100-1000/571.Find_median_given_frequency_of_numbers.sql">Sol</a> </td>
+  <td> 	<a href="100-1000/569.Median_employee_salary.sql">Sol</a> </td>
 </tr>
 <tr>
  <td rowspan=3 align="center">running sum</td>
  <td rowspan=2 align="center">sum()+ window function order by</td>
 <td ><a href="https://leetcode.com/problems/running-total-for-different-genders/">1308. Running Total for Different Genders</a></td>
- <td> <a href="100-1000/569.Median_employee_salary.sql">Sol</a></td>
+ <td> <a href="1301-1700/1308.Running_total_for_different_genders.sql">Sol</a></td>
 </tr>
 <tr>
 <td ><a href="https://leetcode.com/problems/restaurant-growth/">1321. Restaurant Growth</a></td>
