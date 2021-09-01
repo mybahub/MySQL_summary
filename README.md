@@ -16,6 +16,8 @@ ORDER BY avg(rating) DESC, m1.title
 
 * 2. UNION > ORDER BY (UNION takes only the last order by)
 
+* 3. in subquery is time consuming most of the time.
+
 ## 1.0 Topics
 ### 1.1 Date
 <table>
