@@ -227,7 +227,7 @@ ORDER BY avg(rating) DESC, m1.title
 </tr>
 <tr>
 <td align="center">join on date>=col+group by </td>
-<td ><a href="https://leetcode.com/problems/game-play-analysis-iii/submissions/">534. Game Play Analysis III</a></td>
+<td ><a href="https://leetcode.com/problems/game-play-analysis-iii/">534. Game Play Analysis III</a></td>
  <td> <a href="100-1000/534.Game_play_analysis_iii.sql">Sol</a></td>
 </tr>
 <tr>
