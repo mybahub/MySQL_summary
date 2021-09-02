@@ -1,4 +1,6 @@
-/* hard */
+/* hard
+https://leetcode.com/problems/find-median-given-frequency-of-numbers/
+*/
 
 /* Solution 1
 restore to full list (recursive)+ row_number()
@@ -14,13 +16,13 @@ WITH recursive full_list AS (
 ), num_order AS (
     SELECT number,
     ROW_NUMBER() OVER(ORDER BY number) AS row_num,
-    count(number) OVER() as max_num
+    count(number) OVER() as maxNum
     FROM full_list
 )
 
 SELECT avg(number) AS median
 FROM num_order
-WHERE row_num BETWEEN max_num/2 AND max_num/2+1
+WHERE row_num BETWEEN maxNum/2 AND maxNum/2+1
 
 /* Solution 2
 from haotong
