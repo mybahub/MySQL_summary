@@ -221,10 +221,14 @@ ORDER BY avg(rating) DESC, m1.title
   <td> 	<a href="100-1000/569.Median_employee_salary.sql">Sol</a> </td>
 </tr>
 <tr>
- <td rowspan=3 align="center">running sum</td>
- <td rowspan=2 align="center">sum()+ window function order by</td>
+ <td rowspan=4 align="center">running sum</td>
+ <td rowspan=3 align="center">sum()+ window function order by</td>
 <td ><a href="https://leetcode.com/problems/running-total-for-different-genders/">1308. Running Total for Different Genders</a></td>
  <td> <a href="1301-1700/1308.Running_total_for_different_genders.sql">Sol</a></td>
+</tr>
+<tr>
+<td ><a href="https://leetcode.com/problems/find-cumulative-salary-of-an-employee/">579. Find Cumulative Salary of an Employee</a></td>
+ <td> <a href="100-1000/579.Find_cumulative_salary_of_an_employee.sql">Sol</a></td>
 </tr>
 <tr>
 <td ><a href="https://leetcode.com/problems/restaurant-growth/">1321. Restaurant Growth</a></td>
@@ -235,6 +239,7 @@ ORDER BY avg(rating) DESC, m1.title
 <td ><a href="https://leetcode.com/problems/game-play-analysis-iii/">534. Game Play Analysis III</a></td>
  <td> <a href="100-1000/534.Game_play_analysis_iii.sql">Sol</a></td>
 </tr>
+
 <tr>
  <td rowspan=2 align="center">in a range exclusively</td>
  <td align="center">in and not in</td>
