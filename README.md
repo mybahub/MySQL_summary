@@ -380,7 +380,7 @@ ORDER BY avg(rating) DESC, m1.title
 
 ### 2.5 Special Topics
   + where: filter rows not groups
-    + != value not return null becasue DB doesn't know if they match
+    + != value not return null becasue DB doesn't know if it matches the requirement
     + not in vs not exist : [1978](1701-2000/1978.Employees_whose_manager_left_the_company.sql)
     + () > AND > OR (don't rely on default order, use parentheses)
     + IN is faster than OR
