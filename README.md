@@ -345,11 +345,15 @@ ORDER BY avg(rating) DESC, m1.title
 	  <td> 	<a href="1701-2000/1843.Suspicious_bank_accounts.sql">Sol</a> </td>
  </tr>
   <tr>
-	  <td rowspan=2 align="center">consecutive id</td>
-	  <td align="center">id-row_number()+group by</td>
+	  <td rowspan=3 align="center">consecutive id</td>
+	  <td rowspan=2 align="center">id-row_number()+group by</td>
 	  <td> <a href="https://leetcode.com/problems/find-interview-candidates"> 1811. Find Interview Candidates</a> </td>
 	  <td> 	<a href="1701-2000/1811.Find_interview_candidates.sql">Sol</a> </td>
  </tr>
+ <tr>
+  <td> <a href="https://leetcode.com/problems/human-traffic-of-stadium/"> 601. Human Traffic of Stadium</a> </td>
+  <td> 	<a href="100-1000/601.Human_traffic_of_stadium.sql">Sol</a> </td>
+</tr>
  <tr>
   <td align="center">lead()/lag() </td>
   <td> <a href="https://leetcode.com/problems/consecutive-numbers/"> 180. Consecutive Numbers</a> </td>
