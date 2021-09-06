@@ -4,7 +4,7 @@ Solution 1
 Merge columns by union all
 */
 
-WITH temp AS (
+WITH flist AS (
     SELECT requester_id AS id
     FROM request_accepted
     UNION ALL
@@ -13,7 +13,7 @@ WITH temp AS (
 )
 
 SELECT id, count(id) AS num
-FROM temp
+FROM flist
 GROUP BY id
-ORDER BY count(id) DESC
+ORDER BY num DESC
 LIMIT 1;
