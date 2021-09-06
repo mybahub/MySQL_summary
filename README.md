@@ -395,6 +395,6 @@ ORDER BY avg(rating) DESC, m1.title
     + () > AND > OR (don't rely on default order, use parentheses)
     + IN is faster than OR
     + NOT + in/exists/between and
-  + greatest()
+  + greatest() [610](100-1000/610.Triangle_judgement.sql)
   + convert(v,type)
   + ceil()
