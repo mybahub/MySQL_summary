@@ -398,3 +398,4 @@ ORDER BY avg(rating) DESC, m1.title
   + greatest() [610](100-1000/610.Triangle_judgement.sql)
   + convert(v,type)
   + ceil()
+  + set [627](100-1000/627.Swap_salary.sql)
