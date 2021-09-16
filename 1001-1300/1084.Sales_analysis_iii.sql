@@ -6,12 +6,18 @@ https://leetcode.com/problems/sales-analysis-iii/
 IN between; not in ...
 */
 
-SELECT product_id, product_name
-FROM Product
-WHERE product_id IN
-(SELECT distinct product_id FROM Sales WHERE sale_date BETWEEN "2019-01-01" AND "2019-03-31")
-AND product_id NOT IN
-(SELECT distinct product_id FROM Sales WHERE sale_date>"2019-03-31" OR sale_date<"2019-01-01")
+WITH outrange AS(
+    SELECT distinct product_id
+    FROM Sales
+    WHERE sale_date>"2019-03-31" OR sale_date<"2019-01-01"
+)
+
+
+SELECT distinct s.product_id,p.product_name
+FROM Sales s
+JOIN Product p
+USING(product_id)
+WHERE s.product_id NOT IN (SELECT product_id FROM outrange) AND (sale_date BETWEEN "2019-01-01" AND "2019-03-31");
 
 /* Solution 2
 from JaniceJ
