@@ -7,16 +7,10 @@
 
 [from mysqltutorial](https://www.mysqltutorial.org/mysql-having.aspx)
 
-* 1. order by
 
-``` sql
-GROUP BY m1.title
-ORDER BY avg(rating) DESC, m1.title
-```
+* 1. UNION > ORDER BY (UNION takes only the last order by)
 
-* 2. UNION > ORDER BY (UNION takes only the last order by)
-
-* 3. in subquery is time consuming most of the time.
+* 2. in subquery is time consuming most of the time.
 
 ## 1.0 Topics
 ### 1.1 Date
