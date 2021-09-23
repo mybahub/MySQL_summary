@@ -5,28 +5,28 @@
 create a full list with union
 */
 
-WITH fullList AS(
-    SELECT distinct spend_date, "mobile" AS platform FROM Spending
+WITH flist AS(
+    SELECT distinct spend_date,'desktop' AS platform FROM Spending
     UNION
-    SELECT distinct spend_date, "desktop" AS platform FROM Spending
+    SELECT distinct spend_date,'mobile' AS platform FROM Spending
     UNION
-    SELECT distinct spend_date, "both" AS platform FROM Spending
-), b AS (
-    SELECT user_id, spend_date,
-    IF(count(platform)>1,"both", platform) AS platform,
-    sum(amount) AS total_amount
-    FROM Spending
-    GROUP BY user_id,spend_date
+    SELECT distinct spend_date,'both' AS platform FROM Spending
+), summary AS(
+    SELECT
+        user_id,
+        spend_date,
+        if(count(platform)>1,'both', platform) AS platform,
+        if(count(platform)>1,sum(amount),avg(amount)) AS total_amount
+    from Spending
+    GROUP BY 1,2
 )
 
-SELECT f.*,
-COALESCE(t.total_amount,0) AS total_amount,
-COALESCE(t.total_users,0) AS total_users
-FROM fullList f
-LEFT JOIN (
-    SELECT spend_date,platform,sum(total_amount) AS total_amount,
-    count(user_id) AS total_users
-    FROM b
-    GROUP BY spend_date,platform
-) t
-ON f.spend_date=t.spend_date AND f.platform=t.platform
+SELECT
+    f.spend_date,
+    f.platform,
+    sum(IFNULL(s.total_amount,0)) AS total_amount,
+    count(s.user_id) AS total_users
+FROM flist f
+LEFT JOIN summary s
+USING(spend_date,platform)
+GROUP BY 1,2
