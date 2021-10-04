@@ -370,6 +370,9 @@
 
 ### 2.2 Window Function
 
+* function + over()
+  + frame: rows/range
+
 * last_value() [1164](1001-1300/1164.Product_price_at_a_given_date.sql)
 
 * count frequency [534](100-1000/534Game_play_analysis.sql),
