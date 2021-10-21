@@ -125,10 +125,14 @@
 	  <td> 	<a href="1301-1700/1384Total_sales_amount_by_year.sql">Sol</a> </td>
  </tr>
   <tr>
-	  <td rowspan="3" align="center">merge/stack columns</td>
-	  <td rowspan="3" align="center"> union/union all</td>
+	  <td rowspan="4" align="center">merge/stack columns</td>
+	  <td rowspan="4" align="center"> union/union all</td>
 	<td> <a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
 	  <td> 	<a href="100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql">Sol</a> </td>
+ </tr>
+ <tr>
+     <td> <a href="https://leetcode.com/problems/team-scores-in-football-tournament/"> 1212. Team Scores in Football Tournament</a> </td>
+   <td> 	<a href="1001-1300/1212.Team_scores_in_football_tournament.sql">Sol</a> </td>
  </tr>
  <tr>
  	  <td> <a href="https://leetcode.com/problems/grand-slam-titles"> 1783. Grand Slam Titles</a> </td>
