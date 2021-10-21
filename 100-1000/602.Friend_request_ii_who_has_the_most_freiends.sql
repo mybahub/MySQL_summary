@@ -1,4 +1,6 @@
-/* Medium */
+/* Medium
+https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/
+*/
 /*
 Solution 1
 Merge columns by union all

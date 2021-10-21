@@ -127,7 +127,7 @@
   <tr>
 	  <td rowspan="3" align="center">merge/stack columns</td>
 	  <td rowspan="3" align="center"> union/union all</td>
-	<td> <a href="https://leetcode.com/problems/consecutive-available-seats"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
+	<td> <a href="https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/"> 602. Friend Requests II: Who Has the Most Friends</a> </td>
 	  <td> 	<a href="100-1000/602.Friend_request_ii_who_has_the_most_freiends.sql">Sol</a> </td>
  </tr>
  <tr>
