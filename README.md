@@ -373,6 +373,7 @@
 ## 2.0 Concepts
 
 ### 2.1 Recursive
+* build tree structure [1280](1001-1300/1280.Students_and_examinations.sql)
 * break one row [1384](1301-1700/1384Total_sales_amount_by_year.sql)
 
 * making a full list [1336](1301-1700/1336.Number_of_trans.sql), [1613](1301-1700/1613.Find_the_missing_ids.sql),[1127](1001-1300/1127.User_purcahse_platform.sql)
