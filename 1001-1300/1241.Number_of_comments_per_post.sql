@@ -1,32 +1,19 @@
 /* Easy
+https://leetcode.com/problems/number-of-comments-per-post/
 */
 
 /* s1
 */
 
-WITH cte AS(
-    SELECT distinct sub_id, parent_id
-    FROM Submissions
-    GROUP BY 1,2
-), ctable AS (
-    SELECT sub_id,
-    0 AS num
-    FROM cte
-    WHERE parent_id IS NULL
-    UNION ALL
-    SELECT parent_id AS sub_id,
-    1 AS num
-    FROM cte
-    WHERE parent_id IS NOT NULL
-)
-
-SELECT sub_id AS post_id,
-sum(num) AS number_of_comments
-FROM ctable
-WHERE sub_id IN
-(SELECT distinct sub_id FROM Submissions WHERE parent_id IS NULL)
-GROUP BY sub_id
-ORDER BY 1;
+SELECT
+    s1.sub_id AS post_id,
+    count(distinct s2.sub_id) AS number_of_comments
+FROM Submissions s1
+LEFT JOIN Submissions s2
+ON s1.sub_id=s2.parent_id
+WHERE s1.parent_id IS NULL
+GROUP BY post_id
+ORDER BY post_id;
 
 /* S2 by wolfgang_amadeus
 */
