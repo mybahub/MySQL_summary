@@ -14,4 +14,5 @@ FROM Countries c
 JOIN Weather w
 USING(country_id)
 WHERE DATE_FORMAT(w.day,"%Y-%m")='2019-11'
+/* WHERE day LIKE '2019-11%' */
 GROUP BY c.country_name;
