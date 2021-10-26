@@ -5,14 +5,13 @@ https://leetcode.com/problems/running-total-for-different-genders/
 /* Solution 1
 sum+ wf order by
 */
-SELECT gender, day, sum(score) OVER(PARTITION BY gender ORDER BY day) AS total
-FROM (
-    SELECT gender, day,
-sum(score_points) AS score
+SELECT
+    gender,
+    day,
+    sum(score_points) OVER(PARTITION BY gender ORDER BY day) as "total"
 FROM Scores
-GROUP BY day,gender
-ORDER BY gender, day
-) t
+GROUP BY 1,2
+ORDER BY 1,2
 
 
 /* Solution 2
