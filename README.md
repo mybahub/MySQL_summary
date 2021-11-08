@@ -58,6 +58,7 @@
   + % a abbr day name
   + % M month name
 + "2020-01-01" +interval 1 day
++ CURDATE()
 
 &nbsp;
 
