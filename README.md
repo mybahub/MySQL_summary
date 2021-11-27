@@ -12,6 +12,8 @@
 
 * 2. in subquery is time consuming most of the time.
 
+* 3. ORDER BY COUNT(DISTINCT user_id) DESC
+
 ## 1.0 Topics
 ### 1.1 Date
 <table>
